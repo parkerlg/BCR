@@ -30,7 +30,7 @@ def register_applicantView(request) :
     return render(request, 'User/register/applicant.html', context)
 # or this thingy
 def register_org_adminView(request) :
-    form = OrgAdminUserForm(request.POST or None)
+    form = OrgAdminUserForm(request.POST or None, initial={"type": {'organization', 'Organization'}})
     if request.method == 'POST' :
         form = OrgAdminUserForm(request.POST)
         if form.is_valid() :
