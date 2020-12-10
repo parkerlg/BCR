@@ -29,7 +29,7 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')   
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = False #os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = True #os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'minorityapplicationportal.herokuapp.com']
 
